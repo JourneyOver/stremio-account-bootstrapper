@@ -1101,7 +1101,7 @@
         }
       },
       {
-        "transportUrl": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,horriblesubs,nyaasi,tokyotosho,anidex|qualityfilter=scr,cam,unknown|limit=10{{it.transportUrl}}/manifest.json",
+        "transportUrl": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,horriblesubs,nyaasi,tokyotosho,anidex|qualityfilter=720p,480p,other,scr,cam,unknown|limit=4{{it.transportUrl}}/manifest.json",
         "transportName": "",
         "manifest": {
           "id": "com.stremio.torrentio.addon",
@@ -1135,7 +1135,7 @@
         }
       },
       {
-        "transportUrl": "https://torrentio.elfhosted.com/qualityfilter=scr,cam,unknown%7Climit=10{{it.transportUrl}}/manifest.json",
+        "transportUrl": "https://torrentio.elfhosted.com/qualityfilter=720p,480p,other,scr,cam,unknown|limit=4{{it.transportUrl}}/manifest.json",
         "transportName": "",
         "manifest": {
           "id": "Community-knightcrawler.elfhosted.com",
