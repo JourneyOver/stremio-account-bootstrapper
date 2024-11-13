@@ -1163,6 +1163,37 @@
         "flags": {}
       },
       {
+        "transportUrl": "https://mediafusion.elfhosted.com/eJwBwAA__9e8-nODIHSGIIgDzOIr6iaTqAUSxHuF6NszKliIU7Gi8sTF8kVXGS88uFroU7LdUu_9BRUuL3Ahgjyed06f1oncxHlI9goNPGh6owyAKGPGNS1gsdk_xOvvn_Lmgl7OBi_QDIqMn2f4JZDbhZJM_CPGyLT909wxuOHUGJ7H0KSQpsgqVx1c568GgeDku2EqSfnvyukfw6ToJ7KDcsTXBw-naD3oEOjxdqr7mmKPeJFwgrVu4bSIqqJ3o8-gbqeaPJsfZ3g=/manifest.json",
+        "transportName": "",
+        "manifest": {
+          "id": "stremio.addons.mediafusion|elfhosted",
+          "version": "4.1.3",
+          "name": "MediaFusion | ElfHosted",
+          "contactEmail": "mhdzumair@gmail.com",
+          "description": "Universal Stremio Add-on for Movies, Series, Live TV \\u0026amp; Sports Events. Source: https://github.com/mhdzumair/MediaFusion",
+          "logo": "https://mediafusion.elfhosted.com/static/images/mediafusion-elfhosted-logo.png",
+          "behaviorHints": {
+            "configurable": true,
+            "configurationRequired": false
+          },
+          "resources": [
+            {
+              "name": "stream",
+              "types": ["movie", "series", "tv", "events"],
+              "idPrefixes": ["tt", "mf", "dl"]
+            },
+            {
+              "name": "meta",
+              "types": ["movie", "series", "tv", "events"],
+              "idPrefixes": ["mf", "dl"]
+            }
+          ],
+          "types": ["movie", "series", "tv", "events"],
+          "catalogs": []
+        },
+        "flags": {}
+      },
+      {
         "transportUrl": "https://94c8cb9f702d-tmdb-addon.baby-beamup.club/%7B%22provide_imdbId%22%3A%22true%22%2C%22language%22%3A%22en-US%22%7D/manifest.json",
         "transportName": "",
         "manifest": {

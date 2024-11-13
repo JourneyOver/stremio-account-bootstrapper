@@ -23,6 +23,10 @@
         <p>Knight Crawler</p>
       </div>
       <div class="col-2 text-center">
+        <img src="/public/logos/mediafusion.png" alt="MediaFusion" />
+        <p>MediaFusion</p>
+      </div>
+      <div class="col-2 text-center">
         <img src="/public/logos/comet.png" alt="Comet" />
         <p>Comet</p>
       </div>
@@ -30,12 +34,12 @@
         <img src="/public/logos/tpbplus.png" alt="ThePirateBay+" />
         <p>ThePirateBay+</p>
       </div>
+    </div>
+    <div class="row">
       <div class="col-2 text-center">
         <img src="/public/logos/stremify.png" alt="Stremify" />
         <p>Stremify</p>
       </div>
-    </div>
-    <div class="row">
       <div class="col-2 text-center">
         <img src="/public/logos/tmdb.png" alt="TMDB" />
         <p>TMDB</p>
@@ -56,6 +60,8 @@
         <img src="/public/logos/cinemeta.png" alt="Cinemeta" />
         <p>Cinemeta</p>
       </div>
+    </div>
+    <div class="row">
       <div class="col-2 text-center">
         <img src="/public/logos/localfiles.png" alt="Local Files" />
         <p>Local Files</p>

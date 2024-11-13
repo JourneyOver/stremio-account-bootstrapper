@@ -56,10 +56,10 @@ function loadUserAddons() {
 
           // Comet
           const cometTransportUrl = getDataTransportUrl(
-            presetConfig[4].transportUrl
+            presetConfig[5].transportUrl
           );
-          presetConfig[4].manifest.name += ` | ${debridServiceName}`;
-          presetConfig[4].transportUrl = getUrlTransportUrl(cometTransportUrl, {
+          presetConfig[5].manifest.name += ` | ${debridServiceName}`;
+          presetConfig[5].transportUrl = getUrlTransportUrl(cometTransportUrl, {
             ...cometTransportUrl.data,
             debridApiKey: debridApiKey.value,
             debridService: debridService.value
@@ -69,12 +69,12 @@ function loadUserAddons() {
           torrentioConfig = `|sort=qualitysize|debridoptions=nodownloadlinks,nocatalog|${debridService.value}=${debridApiKey.value}`;
 
           // Remove TPB+
-          presetConfig.splice(5, 1);
+          presetConfig.splice(6, 1);
         } else {
           debridServiceName = '';
 
           // Remove Comet
-          presetConfig.splice(4, 1);
+          presetConfig.splice(5, 1);
         }
 
         if (!!rpdbKey.value) {
@@ -101,11 +101,11 @@ function loadUserAddons() {
 
           // TMDB
           const tmdbTransportUrl = getDataTransportUrl(
-            presetConfig[3].transportUrl,
+            presetConfig[4].transportUrl,
             false
           );
 
-          presetConfig[3].transportUrl = getUrlTransportUrl(
+          presetConfig[4].transportUrl = getUrlTransportUrl(
             tmdbTransportUrl,
             {
               ...tmdbTransportUrl.data,
@@ -286,14 +286,6 @@ function isValidApiKey() {
           <label>
             <input type="radio" value="en" v-model="language" />
             English
-          </label>
-          <label>
-            <input type="radio" value="es" v-model="language" />
-            Spanish
-          </label>
-          <label>
-            <input type="radio" value="pt" v-model="language" />
-            Portuguese
           </label>
           <label>
             <input type="radio" value="factory" v-model="language" />
