@@ -11,7 +11,7 @@ const dragging = false;
 let stremioAuthKey = ref('');
 let addons = ref([]);
 let isSyncButtonEnabled = ref(false);
-let language = ref('en');
+let preset = ref('default');
 const debridApiUrlLinks = {
   realdebrid: 'https://real-debrid.com/apitoken',
   alldebrid: 'https://alldebrid.com/apikeys'
@@ -37,7 +37,7 @@ function loadUserAddons() {
   console.log('Loading addons...');
 
   const url = `${stremioAPIBase}addonCollectionGet`;
-  fetch(`/presets/${language.value}.json`)
+  fetch(`/presets/${preset.value}.json`)
     .then((resp) => {
       resp.json().then((data) => {
         console.log(data);
@@ -116,7 +116,7 @@ function loadUserAddons() {
           );
         }
 
-        if (language.value !== 'factory') {
+        if (preset.value !== 'factory') {
           // Torrentio
           presetConfig[1].transportUrl = Sqrl.render(
             presetConfig[1].transportUrl,
@@ -281,14 +281,14 @@ function isValidApiKey() {
         />
       </fieldset>
       <fieldset id="form_step1">
-        <legend>Step 1: Select language</legend>
+        <legend>Step 1: Select preset</legend>
         <div>
           <label>
-            <input type="radio" value="en" v-model="language" />
-            English
+            <input type="radio" value="default" v-model="preset" />
+            Default
           </label>
           <label>
-            <input type="radio" value="factory" v-model="language" />
+            <input type="radio" value="factory" v-model="preset" />
             Factory
           </label>
         </div>

@@ -74,7 +74,7 @@
         <a href="#how">(?)</a>.
       </li>
       <li>
-        Select your preferred language.<br />
+        Select your preferred preset.<br />
         <i>
           The Factory option allows you to reset the account to the same state
           as a recently created one.</i
@@ -117,7 +117,7 @@
     <p>
       <br />
       <i
-        >Note: If you need to change the language or update the debrid API key
+        >Note: If you need to change the preset or update the debrid API key
         after clicking "Load Preset Addons", you will need to reload the page
         and start over.</i
       >
